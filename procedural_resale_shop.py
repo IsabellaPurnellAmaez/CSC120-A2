@@ -9,7 +9,7 @@ Description: an example of procedural code to run a small computer resale shop,
        Note: YOU DO NOT NEED TO MODIFY THIS FILE
 """
 # Import a few useful containers from the typing module
-from typing import Dict, Optional
+from typing import Dict, Optional 
 
 """ inventory: a list where we'll store our inventory """
 inventory : list = []
@@ -21,6 +21,7 @@ adds it to the inventory, returns the assigned item_id
 def buy(computer: Dict):
     inventory.append(computer)
     return inventory.index(computer)
+    #comment
 
 """
 Takes in an item_id and a new price, updates the price of the associated
