@@ -15,22 +15,19 @@ class ResaleShop:
     
 
     def buy(self, computer:Computer):
-        self.inventory.append(Computer)
-        #1. call Computer(...) constructor #to create a new computer instance
+        self.inventory.append(computer)
+        #1. call Computer(...) constructor #to create a new computer instance <== ASK ABOUT THIS STEP IN TUTORING!!
         #2. call inventory.append(...) to add the new computer to the inventory
 
-    def update_price(self):
-        pass
 
-    def sell(self):
-        pass
+    def sell(self, computer:Computer):
+        self.inventory.remove(computer)
 
     def print_inventory(self):
-        pass
+        print(self.inventory)
 
 
 def main():
-   computer1: Computer = Computer()
-
+    computer1: Computer = Computer('2018 MacBook Pro', 'Intel', 256, 16,'High Sierra', 2017, 1000)  
 if __name__ == "__main__":
     main()
