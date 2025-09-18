@@ -58,7 +58,8 @@ class Computer:
 
 def main():
     computer1: Computer = Computer('2018 MacBook Pro', 'Intel', 256, 16,'High Sierra', 2017, 1000)  
-    
+    computer2: Computer = Computer('Mac Pro (Late 2013)', '3.5 GHc 6-Core Intel Xeon E5', 1024, 64, 'MacOS Monterey', 2013, 550)  
+
 
 if __name__ == "__main__":
     main()
